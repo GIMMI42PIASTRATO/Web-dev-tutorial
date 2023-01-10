@@ -1,0 +1,38 @@
+#red {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    text-align: center;
+}
+
+#green {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    text-align: center;
+}
+
+#yellow {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    text-align: center;
+}
+
+#clear {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+}
+
+.body {
+    background-color: #121212;
+}
+
+#title {
+    color: white;
+}

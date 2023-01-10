@@ -1,0 +1,113 @@
+.backGround {
+    background-color: #1f1748;
+    position: absolute;
+    overflow: hidden;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    /* border: 5px solid white; */
+}
+
+/* .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: 100vh;
+} */
+
+.blackBox {
+    flex-direction: column;
+    justify-content: left;
+    background-color: #272639;
+
+    width:  800px;
+    height: 1300px;
+    border-radius: 1.5rem 1.5rem 0 0;
+    padding: 30px;
+    padding-top: 150px;
+}
+
+.billTotalContainer {
+    color: white;
+    font-weight: bold;
+
+    font-size: 22px;
+}
+
+.billTotText {
+    margin-bottom: 10px;
+}
+
+.input::before {
+    content: "$";
+    font-weight: bold;
+    color: red;
+    font-size: 10rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.tipZoneContainer {
+    color: white;
+    font-weight: bold;
+
+    font-size: 22px;
+    margin-top: 50px;
+}
+
+.tipText {
+    margin-bottom: 10px;
+}
+
+.input {
+    width: 94%;
+    padding: 12px 20px;
+    border-radius: 19px;
+
+    background-color: #353959;
+    border: none;
+}
+
+.input:focus {
+    outline: none;
+}
+
+
+
+
+
+/* .peopleContainer {
+
+} */
+
+.peopleText {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-weight: bold;
+
+    font-size: 22px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.peopleAdder {
+    display: flex;
+
+    margin: 20px;
+    
+}
+
+.javascriptAdd {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
