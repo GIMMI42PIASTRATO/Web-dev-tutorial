@@ -1,0 +1,169 @@
+.backGround {
+    background-color: #1f1748;
+    position: absolute;
+    overflow: hidden;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    /* border: 5px solid white; */
+}
+
+/* .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: 100vh;
+} */
+
+.blackBox {
+    flex-direction: column;
+    justify-content: left;
+    background-color: #272639;
+
+    width:  800px;
+    height: 1300px;
+    border-radius: 1.5rem 1.5rem 0 0;
+    padding: 30px;
+    padding-top: 170px;
+}
+
+.billTotalContainer {
+    color: white;
+    font-weight: bold;
+
+    font-size: 22px;
+}
+
+.billTotText {
+    margin-bottom: 15px;
+}
+
+.dollar {
+    position: relative;
+    left: 5px;
+    top: 43px;
+}
+
+.dollar::before{
+    content: '$';
+}
+
+.tipZoneContainer {
+    color: white;
+    font-weight: bold;
+
+    font-size: 22px;
+    margin-top: 50px;
+}
+
+.tipText {
+    margin-bottom: 15px;
+}
+
+.inputContainer {
+    background-color: #353959;
+    border-radius: 1.4rem;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 10px 0 10px 0;
+    width: 800px;
+    margin-left: 5px;
+
+    background: none;
+    border: none;
+    outline: none;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: white;
+    font-weight: bold;
+
+    /* background: none;
+    border: none;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center; */
+}
+
+
+.input:focus {
+    outline: none;
+}
+
+
+
+
+
+/* .peopleContainer {
+
+} */
+
+.peopleText {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-weight: bold;
+
+    font-size: 22px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.peopleAdder {
+    display: flex;
+    text-align: center;
+
+}
+
+.totalPerPerson {
+    margin: 20px;
+    margin-left: 0;
+}
+
+.javascriptAdd {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.counter {
+    margin: 20px 25px;
+}
+
+.button {
+    background-color: #353959;
+    
+    height: 25px;
+    width: 25px;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.totalPerPersonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* QUESTO è IL CSS DI TEST */
