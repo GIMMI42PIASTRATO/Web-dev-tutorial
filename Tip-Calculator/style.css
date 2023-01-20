@@ -21,8 +21,6 @@
 } */
 
 .blackBox {
-    flex-direction: column;
-    justify-content: left;
     background-color: #272639;
 
     width:  800px;
@@ -40,17 +38,7 @@
 }
 
 .billTotText {
-    margin-bottom: 10px;
-}
-
-.input::before {
-    content: "$";
-    font-weight: bold;
-    color: red;
-    font-size: 10rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    margin-bottom: 15px;
 }
 
 .tipZoneContainer {
@@ -62,17 +50,26 @@
 }
 
 .tipText {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.inputContainer {
+    background-color: #353959;
+    border-radius: 19px;
+    padding: 4px 22px;
+    gap: 5px;
+
+    display: flex;
+    align-items: center;
 }
 
 .input {
-    width: 94%;
-    padding: 4px 22px;
-    border-radius: 19px;
+    width: 100%;
     font-size: 22px;
 
-    background-color: #353959;
+    background: none;
     border: none;
+    outline: none;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     color: white;
     font-weight: bold;
