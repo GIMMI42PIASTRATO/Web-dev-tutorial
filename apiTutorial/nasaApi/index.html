@@ -9,9 +9,30 @@
     <title>Nasa API tutorial</title>
 </head>
 <body>
-    <div class="title">Nasa API tutorial</div>
-    <div class="text">This immage are randomly generated from the nasa API</div>
-    <div class="imageContainer" id="imageContainer"></div>
-    <button class="buttom">New image</button>
+    <div class="container">
+        <div>
+            <div class="title">Nasa API tutorial</div>
+            <div class="text">This image are form the Nasa API, select a day from the dayPicker (calendar) to see a new image</div>
+        </div>
+
+        <div class="inputContainer">
+            <div class="inputText">Image Date</div>
+            <div id="error"></div>
+            <input class="input" id='input' type="date">
+        </div>
+
+        <div class="imageContainer" id="imageContainer"></div>
+
+        <div class="autorContainer">
+            <div class="autorText">Author: </div>
+            <div id="author"></div>
+        </div>
+
+        <div class="explanationContainer">
+            <div class="explanationText">Explanation: </div>
+            <div class="explanation" id="explanation"></div>
+        </div>
+        
+    </div>
 </body>
 </html>
