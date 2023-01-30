@@ -11,15 +11,15 @@ body {
     gap: 3rem;
 }
 
-.heroStats {
-    color: white;
+.imgContainer {
+    color: red;
+    font-weight: bold;
     font-size: 2rem;
 }
 
-.heroImg {
-    color: red;
+.heroStats {
+    color: white;
     font-size: 2rem;
-    font-weight: bold;
 }
 
 .heroContainer {
