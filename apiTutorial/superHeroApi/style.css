@@ -22,6 +22,11 @@ body {
     font-weight: bold;
 }
 
+.heroName {
+    color: white;
+    font-size: 4rem;
+}
+
 .heroContainer {
     display: flex;
     flex-direction: column;
