@@ -6,10 +6,33 @@ const temperature = document.querySelector('.temp')
 const minTemp = document.querySelector('.minTemp')
 const maxTemp = document.querySelector('.maxTemp')
 
+const date = new Date()
+let year = date.getFullYear()
+let month = date.getMonth() + 1
+let day = date.getDate()
+
+console.log(`${year}-${month}-${day}`)
+
+let hours = date.getHours()
+let minutes = date.getMinutes()
+let seconds = date.getSeconds()
+
+cityName = undefined
 
 searchButton.addEventListener('click', event => {
+    year = date.getFullYear()
+    month = date.getMonth() + 1
+    day = date.getDate()
+
+    hours = date.getHours()
+    minutes = date.getMinutes()
+    seconds = date.getSeconds()
+
+    console.log(`${hours}:${minutes}:${seconds}`)
+
     const cityName = input.value
     console.log(cityName)
+    getWeather(year, month, day, cityName)
 })
 
 const options = {
@@ -20,11 +43,14 @@ const options = {
 	}
 };
 
-const getWeather = async() => {
-    const response = await fetch('https://visual-crossing-weather.p.rapidapi.com/history?startDateTime=2022-12-15T00%3A00%3A00&aggregateHours=24&location=Torino&endDateTime=2022-12-15T23%3A59%3A59&unitGroup=uk&contentType=json&shortColumnNames=0', options)
-    const data = await response.json()
-    console.log(data)
+const getWeather = async(cityName) => {        
+    let data
+    
+    try{
+        const response = await fetch(`https://visual-crossing-weather.p.rapidapi.com/history?startDateTime=${year}-${month}-${day}T00%3A00%3A00&aggregateHours=24&location=${cityName}&endDateTime=${year}-${month}-${day}T${hours}%3A${minutes}%3A${seconds}&unitGroup=uk&contentType=json&shortColumnNames=0`, options)
+        data = await response.json()
+        console.log(data)
+    }catch(err){
+        console.log(err)
+    }
 }
-
-getWeather()
-	
