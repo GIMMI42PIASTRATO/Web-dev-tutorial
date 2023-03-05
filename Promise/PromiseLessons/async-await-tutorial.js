@@ -1,6 +1,6 @@
 const promise1 = new Promise((resolve, reject) => {
     setTimeout(() => {
-        isReady = [true, false][Math.floor(Math.random() * 2)]
+        isReady = [true, false][console.log(Math.floor(Math.random() * 2))]
         isReady ? resolve('Soup is ready') : reject('No soup today') //condizione, ? significa if, : significa else, if (isReady) {...} else {...}
     }, 2000)
 })
